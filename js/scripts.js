@@ -75,4 +75,38 @@
 		$(this).blur();
 	});
 
+        // Typing effect for the header
+        const words = ["Finance", "Healthcare", "Social Work", "Psychology", "Engineering"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let currentWord = "";
+        let isDeleting = false;
+        const typingElement = document.getElementById("typing-effect");
+    
+        function type() {
+            if (isDeleting) {
+                if (charIndex > 0) {
+                    currentWord = words[wordIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                }
+            } else {
+                if (charIndex < words[wordIndex].length) {
+                    currentWord = words[wordIndex].substring(0, charIndex + 1);
+                    charIndex++;
+                } else {
+                    isDeleting = true;
+                }
+            }
+    
+            typingElement.textContent = currentWord;
+            setTimeout(type, isDeleting ? 100 : 200);
+        }
+    
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(type, 1000); // Start typing after 1 second
+        });
+
 })(jQuery);

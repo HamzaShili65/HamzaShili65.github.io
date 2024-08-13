@@ -1315,5 +1315,18 @@ a:hover.back-to-top {
 
 
 /*  */
+#typing-effect {
+    font-weight: bold;
+}
 
+#cursor {
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
