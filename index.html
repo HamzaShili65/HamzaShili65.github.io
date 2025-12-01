@@ -1,465 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Portfolio Website">
-    <meta name="author" content="Hamza Shili">
-
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
-
-    <!-- Webpage Title -->
-    <title>Hamza Webpage Title</title>
-    
-    <!-- Styles -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamza ElMokhtar Shili | Academic Website</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-        <div class="container">
-            
-            <!-- Image Logo -->
-            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>   -->
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="brand">
+        <span class="brand-mark">
+          <img src="images/1.png" alt="Hamza ElMokhtar Shili logo">
+        </span>
+        <span class="brand-name">amza Shili</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#publications" class="nav-link">Publications &amp; Preprints</a></li>
+          <li><a href="#posters-presentations" class="nav-link">Posters &amp; Presentations</a></li>
+          <li><a href="#teaching-service" class="nav-link">Teaching &amp; Service</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <a class="navbar-brand logo-text page-scroll" href="index.html">H@mza</a>
+  <main>
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-header">
+            <div class="hero-text">
+              <p class="eyebrow">MS CS @ Rice University</p>
+              <h1>.Hamza ElMokhtar Shili</h1>
+              <p class="tagline">I work on efficient and decentralized Mixture-of-Experts, model compression, and federated ML systems.</p>
+              <p class="bio">
+                I am an M.S. student in Computer Science at 
+                <a href="https://www.rice.edu" class="text-link" target="_blank"> Rice University</a>
+                , currently working on my thesis in scalable and federated ML systems fo text generation advised by 
+                <a href="https://akyrillidis.github.io/about/" class="text-link" target="_blank">Prof. Anastasios Kyrillidis</a>. 
+                I like problems that sit at the boundary between algorithms and infrastructure: how to route, compress, and deploy models so they stay efficient and reliable in the wild. 
+              </p>
+               <p class="bio">
+                Previously, I interned with the Vault🔐 Ecosystem team at 
+                <a href="https://www.hashicorp.com" class="text-link" target="_blank">HashiCorp</a> 
+                and then in 
+                <a href="https://www.ibm.com" class="text-link" target="_blank">IBM 👁️🐝Ⓜ️</a>'s  
+                Cloud division, building Terraform tooling and distributed CI systems for secure secret management. My efforts earned me the ✨Intern Communication Principle Award✨ at HashiCorp in 2024 and the ✨Intern Execution Principle Award✨ at IBM in 2025. 
+              </p>
+               <p class="bio"> 
+                Long term, I want to help build ML systems that make state-of-the-art models accessible to teams and users far from big research labs. <strong>That's why I plan to pursue a PhD advancing these directions with collaborative teams.</strong>
+              </p>
+            </div>
+            <div class="headshot-frame headshot-small">
+              <img src="images/avatar_photo.png" alt="Profile photo placeholder">
+            </div>
+          </div>
+          <div class="lists">
+            <div>
+              <h3>Research Interests</h3>
+              <ul class="bullet-list">
+                <li>Scalable and federated ML systems</li>
+                <li>Expert-routed / Mixture-of-Experts architectures</li>
+                <li>Optimization-guided model compression and structured pruning</li>
+                <li>Applications in NLP, Vision and decision-making systems (like financial markets)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="interest-box">
+            <h3>Interests &amp; Hobbies</h3>
+            <ul class="bullet-list">
+              <li>🚴‍♂️ <strong>Biking:</strong> recently started riding routes in the shape of countries 
+                (<a href="https://www.alltrails.com/explore/recording/evening-hike-5c16b0d-340?sh=hamza-shili&utm_campaign=memory&unfurl=false&showMemory=true" class="text-link" target="_blank">Tunisia</a> and 
+                <a href="https://www.alltrails.com/explore/recording/morning-hike-2f34bc2?sh=hamza-shili&utm_campaign=memory&unfurl=false&showMemory=true" class="text-link" target="_blank">South Africa</a> so far).</li>
+              <li>🌍 <strong>Traveling:</strong> visited 30 U.S. states and 23 countries (and counting).</li>
+              <li>🗣️ <strong>Learning languages:</strong> speak Arabic, English, French, and Spanish, and currently learning Italian.</li>
+            </ul>
+          </div>
+          <div class="info-box news-box">
+            <h3>News</h3>
+            <ul class="news-list">
+              <li>📢 <strong>Upcoming</strong> – I'll be attending <strong>NeurIPS 2025</strong> in San Diego (Dec 2–8). Let’s connect if you’ll be there! See you in San Diego🌞🌴!</li>
+              <li><strong>Oct 2025</strong> – Released our new preprint <a href="https://arxiv.org/abs/2511.03983" class="text-link" target="_blank"><em>TwIST: Rigging the Lottery in Transformers with Independent Subnetwork Training</em></a>.</li>
+              <li><strong>Sep 2025</strong> – Our paper <a href="https://openreview.net/forum?id=3FBByWp6GL" class="text-link" target="_blank"><em>Learning to Specialize: Joint Gating–Expert Training for Adaptive MoEs in Decentralized Settings</em></a> was accepted to <strong>NeurIPS 2025 🎉</strong>.</li>
+              <li><strong>Sep 2025</strong> – Accepted to the <strong>MENA ML 2026 Winter School</strong> (acceptance rate 13%)🎉 to present my work on federated Mixture-of-Experts for test summarization.</li>
+              <li><strong>Aug 2025</strong> – Concluded my software engineering internship in IBM’s Cloud division (Vault / HashiCorp acquisition).</li>
+              <li><strong>May 2025</strong> – Graduated from Rice University with a B.S. in Computer Science🎉 and started my thesis-based M.S. in Computer Science at Rice.</li>
+              <li><strong>May 2025</strong> – Wrapped up my internship with the Vault Ecosystem team at HashiCorp.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <section id="publications" class="section">
+      <div class="container">
+        <h2>Publications &amp; Preprints</h2>
+        <div class="pub-group">
+          <h3>Peer-Reviewed Publications</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="authors">Yehya Farhat, <strong>Hamza ElMokhtar Shili</strong>, Fangshuo Liao, Chen Dun, Mirian Del Carmen Hipolito Garcia, Guoqing Zheng, Ahmed Hassan Awadallah, Robert Sim, Dimitrios Dimitriadis, Anastasios Kyrillidis.</span>
+              <span class="title"><em>Learning to Specialize: Joint Gating-Expert Training for Adaptive MoEs in Decentralized Settings.</em></span>
+              <span class="venue">In Proceedings of NeurIPS, 2025.</span>
+              <span class="links"><a href="/papers/Learning_to_Specialize_J.pdf" class="text-link" target="_blank">PDF</a> · <a href="/posters/NeurIPS_Poster.png" class="text-link" target="_blank">Poster</a> · <a href="https://arxiv.org/abs/2306.08586" class="text-link" target="_blank">arXiv</a> </span>
+            </li>
+          </ul>
+        </div>
+        <div class="pub-group">
+          <h3>Preprints / Under Review</h3>
+          <ul class="pub-list">
+            <li>
+              <span class="authors">Michael Menezes, Barbara Su, Xinze Feng, Yehya Farhat, <strong>Hamza ElMokhtar Shili</strong>, Anastasios Kyrillidis.</span>
+              <span class="title"><em>TwIST: Rigging the Lottery in Transformers with Independent Subnetwork Training.</em></span>
+              <span class="venue">Preprint (Under review), 2025.</span>
+              <span class="links"><a href="/papers/TwIST.pdf" class="text-link" target="_blank">PDF</a> · <a href="https://arxiv.org/abs/2511.03983" class="text-link" target="_blank">arXiv</a> </span>
+            </li>
+            <li>
+              <span class="authors"><strong>Hamza ElMokhtar Shili</strong>, Natasha Patnaik, Isabelle Ruble, Kathryn Jarjoura, Daniel Suarez Aguirre.</span>
+              <span class="title"><em>Projection-Free CNN Pruning via Frank-Wolfe with Momentum: Sparser Models with Less Pretraining.</em></span>
+              <span class="venue">Preprint, 2025.</span>
+              <span class="links"><a href="/papers/FW_CNN_pruning.pdf" class="text-link" target="_blank">PDF</a> · <a href="#" class="text-link" target="_blank">arXiv</a> </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#services">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <span class="nav-item social-icons"> 
-                    <span class="fa-stack"> 
-                        <a href="https://www.linkedin.com/in/hamza-elmokhtar/" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-linkedin fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="https://github.com/HamzaShili65" target="_blank" rel="noopener noreferrer"> 
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-github fa-stack-1x"></i>
-                        </a>
-                    </span>
-                </span>
-            </div> <!-- end of navbar-collapse -->
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+    <section id="posters-presentations" class="section">
+      <div class="container">
+        <h2>Posters &amp; Presentations</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="authors"><strong>Satellite Segmentation for In-Space Inspection</strong></span>
+            <span class="title"><em><strong>Hamza ElMokhtar Shili</strong>, Sophie Chikhladze, Taeho Choe, Aditi Balaji, Jeffery Huang</em></span>
+            <span class="venue">Rice Data to Knowledge (D2K) Spring 2025 Showcase, Rice University — Houston, TX — May 2025 </span>
+            <span class="links"><a href="/posters/NASA_Poster.png" class="text-link"  target="_blank">Poster</a></span>
+          </li>
+          <li>
+            <span class="authors"><strong>Reinforcement Learning for Financial Market Optimization: Risk-Aware Policy Design</strong></span>
+            <span class="title"><em><strong>Hamza ElMokhtar Shili</strong>, Andres Villada, Shahrazad Ali</em></span>
+            <span class="venue">11th Eubank Conference on Real World Markets, Rice University — Houston, TX — Apr 2024</span>
+            <span class="links"><a href="/posters/Investment_Strategy.png" class="text-link"  target="_blank">Poster</a></span>
+          </li>
+          <li>
+            <span class="authors"><strong>Generating Low-Depth Quantum Variational Circuits for the Hydroxyl Cation to Attain High Fidelity on NISQ Computers</strong></span>
+            <span class="title"><em>Jason Han, Jason Ludmir, <strong>Hamza ElMokhtar Shili</strong>, Tirthak Patel</em></span>
+            <span class="venue">Quantum Computing for Drug Discovery Challenge, ICCAD 2023 — San Francisco, CA — Oct 2023</span>
+            <span class="links"><a href="/posters/ICCAD_Contest-4.pdf" class="text-link"  target="_blank">Report</a> · <a href="https://github.com/positivetechnologylab/ptl-iccad-contest-2023" class="text-link"  target="_blank">Code</a></span>
+          </li>
+        </ul>
+      </div>
+    </section>
 
+    <section id="teaching-service" class="section">
+      <div class="container">
+        <h2>Teaching &amp; Service</h2>
+        <div class="two-col">
+          <div>
+            <h3>Teaching</h3>
+            <ul class="bullet-list">
+              <li>COMP 414/514: Optimization - Algorithms, Complexity & Approximations - Rice University - Head TA</li>
+              <li>COMP 412: Compilers Design and Construction - Rice University - TA</li>
+              <li>COMP 321: Intro to Computer Systems - Rice University - TA</li>
+              <li>COMP 382: Reasoning about Algorithms - Rice University - TA</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Mentoring &amp; Service</h3>
+            <ul class="bullet-list">
+              <li>Mentor for students from my former high school in South Africa applying to CS programs; helped organize a hackathon to build their coding skills.</li>
+              <li>Mentor for undergraduate students interested in scalable and federated ML systems (MoE routing and pruning).</li>
+              <li>Volunteer for outreach workshops introducing high-school students in Africa to programming and AI through regional initiatives.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   <!-- Header -->
-   <header id="header" class="header">
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+          <div>
+            <p>Email: <a class="text-link">hamza [dot] shili [at] rice [dot] edu</a></p>
+            <p>Institution: Rice University</p>
+            <p>Location: Houston, TX</p>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/hamza-elmokhtar/" target="_blank" class="icon-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8.98h4.9V24H.5zM8.48 8.98h4.7v2.05h.07c.65-1.23 2.24-2.52 4.62-2.52 4.94 0 5.86 3.25 5.86 7.47V24h-4.9v-6.3c0-1.5-.03-3.42-2.08-3.42-2.08 0-2.4 1.62-2.4 3.3V24h-4.9z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://scholar.google.com/citations?authuser=1&user=vhlfVH0AAAAJ" target="_blank" class="icon-link" aria-label="Google Scholar">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 9l11 7 9-5.727V17h2V9z"/><path d="M12 22 6 18v-4l6 4 6-4v4z"/></svg>
+              <span>Google Scholar</span>
+            </a>
+            <a href="https://github.com/HamzaShili65" target="_blank" class="icon-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.29 9.42 7.86 10.95.58.1.79-.25.79-.55v-2c-3.2.69-3.87-1.38-3.87-1.38-.53-1.34-1.3-1.7-1.3-1.7-1.07-.73.08-.72.08-.72 1.18.08 1.8 1.21 1.8 1.21 1.05 1.8 2.76 1.28 3.43.98.1-.76.41-1.28.75-1.58-2.55-.29-5.24-1.27-5.24-5.64 0-1.25.45-2.28 1.2-3.08-.12-.3-.52-1.52.11-3.18 0 0 .97-.31 3.2 1.18a11.1 11.1 0 0 1 5.82 0c2.23-1.5 3.2-1.18 3.2-1.18.63 1.66.23 2.88.11 3.18.75.8 1.2 1.83 1.2 3.08 0 4.38-2.7 5.34-5.27 5.62.42.36.8 1.09.8 2.2v3.26c0 .3.21.66.8.55A10.53 10.53 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="text-container">
-                    <h1 class="h1-large">
-                        Bridging the Gap Between Technology and<br>
-                        <span id="typing-effect"></span>
-                        <span id="cursor">|</span>
-                    </h1>
-                    <a class="btn-solid-lg page-scroll" href="#about">Discover</a>
-                    <a class="btn-outline-lg page-scroll" href="#contact"><i class="fas fa-user"></i>Contact Me</a>
-                </div> <!-- end of text-container -->
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-</header> <!-- end of header -->
-<!-- end of header -->
+      <p>© 2025 Hamza ElMokhtar Shili • Last updated: December 2025</p>
+    </div>
+  </footer>
 
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-    <!-- About-->
-    <div id="about" class="basic-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-container first">
-                        <h2>Hi there! I'm Hamza,</h2>
-                        <p>A Computer Science and Economics double major from Rice
-                            University. I've navigated the crossroads of technology and finance, 
-                            building a foundation in programming languages and market dynamics. 
-                            My journey has ranged from enhancing system efficiency as a Design 
-                            Intern to predicting stock prices using ML techniques. I'm excited to 
-                            leverage this blend of skills in roles within software engineering and 
-                            quantitative analysis. Let's connect if you're interested in the intersection 
-                             of tech and finance!</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                    <!-- Experience Section -->
-                    <div class="col-lg-4">
-                        <div class="text-container second">
-                            <h5>Notable Work Experience</h5>
-                                <div class="time">May 2024 - PRESENT</div>
-                                <h6>Software Engineering Intern @ HashiCorp</h6>
-                                <!-- <p>Working happily on my own web projects</p> -->
-                                <p>Integrating Vault with Terraform to enhance secret management and infrastructure as code solutions</p>
-                                <p>Designing secure, scalable infrastructure while collaborating with experienced professionals in the field</p>   
-                                <div class="time">Oct 2023 - PRESENT</div>
-                                <h6>Research Assistant @ OptimaLab, Rice University</h6>
-                                <p>Developing a benchmarking algorithm for ICARUS, a transformative deep learning model, reducing GPU training time and enhancing efficiency in distributed learning scenarios</p>
-                                <p>Curating dataset for testing ICARUS in a federated learning context, focusing on data architecture and evaluating its performance in distributed network environments for improved data engineering practices</p>
-                            </div>
-                        </div> <!-- end of text-container -->
-                    <!-- Education Section -->
-                    <div class="col-lg-4">
-                        <div class="text-container third">
-                            <h5>Education</h5>
-                                <div class="time">May 2026</div>
-                                <h6>Masters of Science in Computer Science</h6>
-                                <p>Rice University</p>
-                                <p>Awards: Department of Computer Science Full-Ride Graduate Research Fellowship</p>
-                                <div class="time">May 2025</div>
-                                <h6>Bachelor of Science in Computer Science</h6>
-                                <p>Rice University</p>
-                                <p>Relevant Courses: Machine Learning, Concurrent Programming, Database Systems,
-                                    Optimization, Probability and Statistics, Linear Algebra, Operating Systems, Market Models, Financial Accounting</p>
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of container -->                
-                <div class="actions-container">
-                    <div class="action-item">
-                        <a href="./resumes/SWE_resume.pdf" class="button" target="_blank" rel="noopener">SWE Resume</a>
-                    </div>
-                    <div class="action-item">
-                        <a href="DATA&ML Resume Hamza Shili.pdf" class="button" target="_blank" rel="noopener">DATA & ML Resume (Incoming)</a>
-                    </div>
-                    <div class="action-item">
-                        <a href="DATA&ML Resume Hamza Shili.pdf" class="button" target="_blank" rel="noopener">PM Resume (Incoming)</a>
-                    </div>
-                </div>                
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of about -->
+    navToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
 
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('open');
+        navToggle.classList.remove('open');
+      });
+    });
 
-    <!-- Services -->
-    <div id="services" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Skill Stack</h2>
-                    <p class="p-heading">Backend has been my bread and butter for the past 3 years. 
-                        However, at such an early stage of my career, I'd like to
-                        think of myself as an intermediate Swiss Army Knife like developer
-                        who dabbled in front-end, cloud computing and infrastructure, database management,
-                        theoretical optimization, and ML & data engineering. This is an overview of my current skills:</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="far fa-file-code"></i>
-                        <h4>LANGUAGES</h4>
-                            <p>Python (Expert)</p>
-                            <p>Java, C, Go (Proficient)</p>
-                            <p>HTML & CSS</p>
-                            <p>Java/Typescript</p>
-                            <p>SQL</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-cubes"></i>
-                        <h4>DBs, FRMs, LIBs</h4>
-                        <p>PostgreSQL, MongoDB</p>
-                        <p>PyTorch, Scikit-learn</p>
-                        <p>NumPy, Pandas</p> 
-                        <p>JUnit, UnitTest, GoTest</p>
-                        <p>Matplotlib</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <div class="text-box">
-                        <i class="fas fa-terminal"></i>
-                        <h4>TOOLS</h4>
-                            <p>Docker & Kubernetes</p>
-                            <p>Linux/Unix &  Shell Scripting</p>
-                            <p>Terraform & Vault</p>
-                            <p>REST APIs</p>
-                            <p>Git</p>
-                    </div> <!-- end of text-box -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of services -->
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        const activeLink = document.querySelector('.nav-link[href="#' + id + '"]');
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    }, {
+      threshold: 0.4
+    });
 
-    <!-- Projects -->
-    <div id="projects" class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Delivered Projects</h2>
-                    <p class="p-heading">Listed below are some of the most representative projects I've worked on. 
-                        They touch on multiple fields of computer science and range from 
-                        basic software & hardware integration projects to advanced convex optimization algorithms and their applications in trading strategies</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of projects -->
+    sections.forEach(section => observer.observe(section));
 
-    <!-- Works -->
-    <div class="basic-4">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://github.com/HamzaShili65/StudyBuddy" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="images/projects/01.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>StudyBuddy:</strong> 
-                            A comprehensive personal assistant that streamlines your academic life. From organizing your directories and automating Google searches to setting up keyword alerts, reminders, generating citations, and shortening links, StudyBuddy is your all-in-one study companion. <a class="blue" href="https://github.com/HamzaShili65/StudyBuddy" target="_blank" rel="noopener noreferrer">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://github.com/HamzaShili65/Health-Monitor" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="images/projects/03.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>Health-Monitor:</strong> 
-                            A heart rate sensor that measures BPM and SPO2 and a temperature and humidity sensor. All data are displayed on the TFT touchscreen. <a class="blue" href="https://github.com/HamzaShili65/Health-Monitor" target="_blank" rel="noopener noreferrer">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://github.com/HamzaShili65/DataDriven-Emotions_Prediction" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="images/projects/04.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>Data Driven Emotions Prediction:</strong> 
-                            A machine learning project aimed at classifying emotions in speech using SVM, CNN, and GMM, encompassing extensive processes of feature extraction, preprocessing, and model validation. <a class="blue" href="https://github.com/HamzaShili65/DataDriven-Emotions_Prediction" target="_blank" rel="noopener noreferrer">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-
-            <div class="row">
-                
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://github.com/HamzaShili65/AlphaCraft-Enhancing-Portfolio-Management-with-Reinforcement-Learning" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="images/projects/02.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>AlphaCraft:</strong> 
-                            An advanced machine learning-driven system designed to transcend traditional value and momentum investing strategies. By leveraging state-of-the-art reinforcement learning techniques, it optimizes portfolio management, delivering predictive insights with unmatched accuracy. 
-                            <a class="blue" href="https://github.com/HamzaShili65/AlphaCraft-Enhancing-Portfolio-Management-with-Reinforcement-Learning" target="_blank" rel="noopener noreferrer">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://github.com/HamzaShili65/Algorithmic-Variants-of-Frank-Wolfe-for-Deep-Neural-Network-Pruning-Computational-Study" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="images/projects/05.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>Algorithmic Variants of Frank-Wolfe for
-                            Convolutional Neural Network Pruning:</strong> 
-                            A thesis that explores the effectiveness of various Frank-Wolfe algorithm variants for pruning large convolutional neural networks, inspired by the "Lottery Ticket Hypothesis." The results show that using a momentum-based Frank-Wolfe approach on the MNIST dataset yields a sparser model with improved accuracy compared to the original network and other pruning methods. <a class="blue" href="https://github.com/HamzaShili65/Algorithmic-Variants-of-Frank-Wolfe-for-Deep-Neural-Network-Pruning-Computational-Study" target="_blank" rel="noopener noreferrer">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-
-                <div class="col-lg-4">
-                    <div class="text-container">
-                        <div class="image-container">
-                            <a href="https://github.com/HamzaShili65/ai4allProject" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="images/projects/06.jpg" alt="alternative">
-                            </a>
-                        </div> <!-- end of image-container -->
-                        <p><strong>Predictive Modeling of Homelessness Risk Factors in Women and Children:</strong> 
-                            A study that employs logistic regression and random forests to identify and predict key factors contributing to homelessness among women and children. By analyzing these predictors, the model aims to inform targeted interventions and improve support services. <a class="blue" href="https://github.com/HamzaShili65/ai4allProject" target="_blank" rel="noopener noreferrer">details</a></p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of works -->
-
-
-    <!-- Testimonials -->
-    <div class="cards-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">A few words from people who worked with me in the past</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="testimonial-text">“Hamza's ability to rapidly acquire and apply new skills, combined with his proactive approach and commitment to excelling in his role, consistently exceeded expectations. His dedication, adaptability, and strong communication skills made him a valuable team member, and I highly recommend him for any future opportunities.”</p>
-                            <div class="details">
-                                <img src="images/testimonial-1.png" alt="alternative">
-                                <div class="text">
-                                    <div class="testimonial-author">Angelo Cordon</div>
-                                    <div class="occupation">Senior Software Engineer - HashiCorp</div>
-                                </div> <!-- end of text -->
-                            </div> <!-- end of testimonial-details -->
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of testimonials -->
-
-
-    <!-- Section Divider -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr class="section-divider">
-            </div> <!-- end of col -->
-        </div> <!-- end of row -->
-    </div> <!-- end of container -->
-    <!-- end of section divider -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-1 bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Contact Details</h2>
-                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me.</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Project details</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->  
-    <!-- end of contact -->
-
-
-    <!-- Footer -->
-    <div class="footer bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="social-container">
-                        <span class="fa-stack">
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hamza-elmokhtar/">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/HamzaShili65">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of social-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright bg-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a class="no-line" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/hamza-elmokhtar/">Hamza Shili</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed By <a class="no-line" href="https://themewagon.com/">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-        
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
-    
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    // // Open all links in a new tab/window for convenience.
+    // document.querySelectorAll('a').forEach(link => {
+    //   link.setAttribute('target', '_blank');
+    //   link.setAttribute('rel', 'noopener noreferrer');
+    // });
+  </script>
 </body>
 </html>
